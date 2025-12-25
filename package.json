@@ -9,6 +9,12 @@
     "lint": "eslint"
   },
   "dependencies": {
+    "@clerk/nextjs": "^6.36.5",
+    "@tanstack/react-query": "^5.90.12",
+    "axios": "^1.13.2",
+    "cloudinary": "^2.8.0",
+    "inngest": "^3.48.1",
+    "mongoose": "^9.0.2",
     "next": "16.1.1",
     "react": "19.2.3",
     "react-dom": "19.2.3"
