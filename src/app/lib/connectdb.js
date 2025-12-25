@@ -9,7 +9,7 @@ if (!cached) {
 export default async function connectdb() {
     if (cached.conn) return cached.conn;
     if (!cached.promise) {
-        cached.promise = mongoose.connect(process.env.MONGO_URI);
+        cached.promise = mongoose.connect(process.env.MONGO_URI, { dbName: "pencil" });
     }
 
     cached.conn = await cached.promise;
