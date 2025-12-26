@@ -14,7 +14,7 @@ export async function POST(req) {
     try {
         const formData = await req.formData();
         const file = formData.get("file");
-        const userId = req.headers["x-clerk-user-id"] || "test"
+        const userId = req.headers["x-clerk-user-id"]
 
         if (!userId) {
             return NextResponse.json({
