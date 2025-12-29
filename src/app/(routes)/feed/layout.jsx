@@ -4,7 +4,7 @@ export default function FeedLayout({ children }) {
     return (
         <div className="w-full">
             <Navbar />
-            <div className="container mx-auto py-4">
+            <div className="w-full max-w-5xl mx-auto py-4">
                 {children}
             </div>
         </div>

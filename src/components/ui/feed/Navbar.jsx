@@ -8,8 +8,8 @@ export default function Navbar() {
     const { user, isSignedIn } = useUser()
 
     return (
-        <div className='w-full bg-base-100 shadow-sm'>
-            <div className="navbar w-full container mx-auto">
+        <div className='w-full bg-base-100 shadow-sm sticky top-0 px-3'>
+            <div className="navbar w-full max-w-5xl mx-auto">
                 <div className="flex-1">
                     <Link href={'/feed'} className="text-xl">Pencil</Link>
                 </div>
