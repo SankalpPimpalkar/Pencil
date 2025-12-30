@@ -1,10 +1,18 @@
-import { Geist, Geist_Mono, BBH_Bogle } from "next/font/google";
+import { Inter, Roboto } from "next/font/google";
 import { ClerkProvider } from "@clerk/nextjs";
-import "../globals.css"
+import "../globals.css";
 
-const bogle = BBH_Bogle({
-  weight: "400",
+const inter = Inter({
   subsets: ["latin"],
+  variable: "--font-inter",
+  display: "swap",
+});
+
+const roboto = Roboto({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+  variable: "--font-roboto",
+  display: "swap",
 });
 
 export const metadata = {
@@ -16,7 +24,13 @@ export default function RootLayout({ children }) {
   return (
     <ClerkProvider>
       <html lang="en" data-theme="cupcake">
-        <body className={`${bogle.className} tracking-wider`}>
+        <body
+          className={`
+            ${inter.variable} 
+            ${roboto.variable} 
+            font-sans tracking-wide
+          `}
+        >
           {children}
         </body>
       </html>

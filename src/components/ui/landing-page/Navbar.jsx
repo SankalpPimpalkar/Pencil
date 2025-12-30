@@ -11,7 +11,7 @@ export default function Navbar() {
         <div className='w-full bg-base-100 shadow-sm'>
             <div className="navbar w-full container mx-auto">
                 <div className="flex-1">
-                    <Link href={'/feed'} className="text-xl">Pencil</Link>
+                    <Link href={'/feed'} className="text-xl font-bold text-neutral-800">Pencil</Link>
                 </div>
 
                 {
