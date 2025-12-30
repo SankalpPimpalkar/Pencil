@@ -1,11 +1,15 @@
 import Feed from '@/components/ui/feed/Feed'
+import Sidebar from '@/components/ui/feed/Sidebar'
 import React from 'react'
 
 export default function FeedPage() {
     return (
-        <div className='w-full h-full max-h-dvh'>
-            <section className='col-span-5 lg:col-span-3 w-full max-w-5xl mx-auto px-3'>
+        <div className='w-full h-full grid grid-cols-5 max-h-dvh md:divide-x divide-neutral-300'>
+            <section className='col-span-5 md:col-span-3 py-2'>
                 <Feed />
+            </section>
+            <section className='hidden md:block col-span-2 py-2'>
+                <Sidebar />
             </section>
         </div>
     )
